@@ -10,16 +10,17 @@ A React + Redux + Ant-Design frontend boilerplate.
 - [x] Babel
 - [x] PostCSS
 - [x] LESS
-- [ ] CSS Modules
+- [x] CSS Modules
 - [x] ESLint (Airbnb)
 - [x] JWT
-- [ ] Examples
+- [x] Examples
 
 ## npm scripts
+npm install
 
 ### Dev
 ```
-npm run dev
+npm run start
 ```
 Open `http://localhost:3000` in your browser.
 
