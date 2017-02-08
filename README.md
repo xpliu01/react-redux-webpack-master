@@ -16,7 +16,9 @@ A React + Redux + Ant-Design frontend boilerplate.
 - [x] Examples
 
 ## npm scripts
+```
 npm install
+```
 
 ### Dev
 ```
