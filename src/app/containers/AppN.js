@@ -1,8 +1,3 @@
-/**
- * User: xpliu
- * Date: 2017/2/8 15:06
- * 创建原因：
- */
 import React, { PropTypes } from 'react';
 
 const App = (props) => (

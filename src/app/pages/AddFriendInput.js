@@ -1,11 +1,5 @@
-/**
- * User: xpliu
- * Date: 2017/2/8 15:06
- * 创建原因：
- */
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import '../styles/AddFriendInput.scss'
 import * as friendsActions from '../actions/friendsAction'
 
 class AddFriendInput extends Component {

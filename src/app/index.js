@@ -1,17 +1,19 @@
+/**
+ * User: xpliu
+ * Date: 2017/2/8 15:06
+ * 创建原因：
+ */
 import React from 'react';
 import { render } from 'react-dom';
-import { browserHistory } from 'react-router';
+import { browserHistory ,hashHistory} from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { AppContainer } from 'react-hot-loader';
 import Redbox from 'redbox-react';
 import Root from './Root';
 import configureStore from './store/configureStore';
-import './styles/styles.scss';
-import 'antd/dist/antd.min.css';
 import './styles/common.scss';
 
-const store = configureStore();
-const history = syncHistoryWithStore(browserHistory, store);
+const history = syncHistoryWithStore(browserHistory, configureStore);
 
 // Get the DOM Element that will hogggggst our React application
 const rootEl = document.getElementById('app');
@@ -19,7 +21,7 @@ const rootEl = document.getElementById('app');
 // Render the React application to the DOM
 render(
   <AppContainer errorReporter={Redbox}>
-    <Root store={store} history={history} />
+    <Root store={configureStore} history={history} />
   </AppContainer>,
   rootEl
 );
@@ -46,7 +48,7 @@ if (module.hot) {
 
     render(
       <AppContainer errorReporter={Redbox}>
-        <NextApp store={store} history={history} />
+        <NextApp store={configureStore} history={history} />
       </AppContainer>,
       rootEl
     );

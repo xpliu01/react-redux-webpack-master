@@ -1,8 +1,3 @@
-/**
- * User: xpliu
- * Date: 2017/2/8 15:06
- * 创建原因：
- */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import FriendsLayout from './FriendsLayout';

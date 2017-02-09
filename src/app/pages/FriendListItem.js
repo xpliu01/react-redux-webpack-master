@@ -1,12 +1,6 @@
-/**
- * User: xpliu
- * Date: 2017/2/8 15:06
- * 创建原因：
- */
 import React, { Component, PropTypes } from 'react';
 import classnames from 'classnames';
 import * as friendsActions from '../actions/friendsAction'
-import '../styles/FriendListItem.scss'
 import { connect } from 'react-redux';
 
 class FriendListItem extends Component {

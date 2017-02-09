@@ -5,13 +5,25 @@
  */
 import { createStore, applyMiddleware, compose } from 'redux';
 import promiseMiddleware from 'redux-promise';
-
+import thunkMiddleware from 'redux-thunk'
 import rootReducer from '../reducers';
 
-const enhancer = compose(
-  applyMiddleware(promiseMiddleware)
-)(createStore);
+const middleWares = [promiseMiddleware,thunkMiddleware];
 
-export default function configureStore(initialState) {
-  return enhancer(rootReducer, initialState);
-}
+const createStoreWithMiddleware = applyMiddleware(
+    ...middleWares //解构元素
+)(createStore)
+
+const store = createStoreWithMiddleware(rootReducer);
+
+export default store;
+
+/*
+const enhancer = compose(
+ applyMiddleware(promiseMiddleware)
+ )(createStore);
+
+ export default function configureStore(initialState) {
+ return enhancer(rootReducer, initialState);
+ }
+ */

@@ -1,10 +1,4 @@
-/**
- * User: xpliu
- * Date: 2017/2/8 15:06
- * 创建原因：
- */
 import React, { Component } from 'react';
-import '../../styles/page2.scss';
 import Input from 'antd/lib/input';
 import DatePicker from 'antd/lib/date-picker';
 import Button from 'antd/lib/button';

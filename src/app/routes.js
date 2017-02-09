@@ -1,9 +1,7 @@
 import React from 'react';
 import { Route, IndexRoute, Redirect } from 'react-router';
 
-/*
-//this is demo1
-import App from './containers/AppN';
+/*import App from './containers/AppN';
 import FriendsView from './pages/FriendsView';
 import NotFoundView from './components/NotFound';
 
@@ -16,7 +14,6 @@ export default (
     </Route>
 );*/
 
-//this is demo2
 import App from './containers/App';
 import NotFoundView from './components/NotFound';
 import Page1 from './pages/page1/Page1';

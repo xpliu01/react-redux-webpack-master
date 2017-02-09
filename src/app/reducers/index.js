@@ -6,8 +6,10 @@
 import { combineReducers } from 'redux';
 import { routerReducer as routing } from 'react-router-redux';
 import friends from './friends';
+import appData from './appData';
 
 export default combineReducers({
     routing,
-    friends: friends
+    friends: friends,
+    appData: appData,
 });
