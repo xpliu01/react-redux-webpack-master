@@ -9,10 +9,9 @@ A React + Redux + Ant-Design frontend boilerplate.
 - [x] Redux Actions
 - [x] Babel
 - [x] PostCSS
-- [x] LESS
+- [x] SASS
 - [x] CSS Modules
 - [x] ESLint (Airbnb)
-- [x] JWT
 - [x] Examples
 
 ## npm scripts
