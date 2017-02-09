@@ -16,9 +16,8 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nicksp/redux-webpack-es6-boilerplate.git"
+    "url": "https://github.com/xpliu01/react-redux-webpack-master.git"
   },
-  "bugs": "https://github.com/nicksp/redux-webpack-es6-boilerplate/issues",
   "scripts": {
     "start": "cross-env NODE_ENV=development node ./config/devServer.js",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.prod.js"
